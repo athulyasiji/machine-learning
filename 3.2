@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.array(['Mon', 'Tues', 'Wed', 'Thurs', 'fri'])
+y = np.array([300, 450, 150, 400, 650])
+plt.subplot(2, 1, 1)
+plt.plot(x, y)
+plt.title('Sales Data 1', loc = 'right')
+plt.plot(x,y, linestyle = 'dotted', color = 'cyan', marker = 'H', mfc = 'magenta',mec = 'black')
+plt.grid(color = 'blue', linestyle = ':')
+x1 = np.array(['Mon', 'Tues', 'Wed', 'Thurs', 'fri'])
+y1 = np.array([400, 500, 350, 300, 500])
+plt.subplot(2, 1, 2)
+plt.title('Sales Data 2', loc = 'center')
+plt.plot(x1,y1, linestyle = 'dashed' , color = 'yellow',marker = 'D', mfc = 'green',mec = 'red')
+plt.grid(color = 'blue', linestyle = ':')
+plt.show()
