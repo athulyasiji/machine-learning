@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import numpy as np
+print("ATHULYA SIJI : 21MCA014")
+x = np.array([2001, 2002, 2003, 2004, 2005, 2006, 2007], )
+y = np.array([24000, 22500, 19700, 17500, 14500, 10000, 5800 ])
+plt.plot(x, y)
+plt.xlabel('year')
+plt.ylabel('Car value')
+plt.title('Value Depreciation!', loc = 'left')
+plt.plot(x,y, linestyle = 'dotted', color = 'green', ms = 20)
+plt.plot(x,y, color = 'r')
+plt.show()
